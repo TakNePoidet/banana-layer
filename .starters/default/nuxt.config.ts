@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
-  extends: ['my-theme'],
-  typescript: {
-    includeWorkspace: true
-  }
-})
+	extends: ['@poidet/nuxt'],
+	typescript: {
+		includeWorkspace: true
+	}
+});
