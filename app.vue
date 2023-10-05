@@ -1,5 +1,3 @@
 <template>
-	<div>
-		<nuxt-layout />
-	</div>
+	<content-doc />
 </template>
