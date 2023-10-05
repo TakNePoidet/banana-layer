@@ -21,7 +21,8 @@
 		"preview": "nuxi preview .starters/default",
 		"prepare": "nuxi prepare && nuxi prepare .starters/default",
 		"lint": "eslint --fix .",
-		"prettier": "prettier --write ."
+		"prettier": "prettier --write .",
+		"release": "pnpm run lint && changelogen --release && pnpm publish && git push --follow-tags"
 	},
 	"dependencies": {
 		"@nuxt/content": "^2.8.5",
@@ -35,6 +36,7 @@
 		"@poidet/editorconfig": "^0.3.0",
 		"@poidet/eslint-config-nuxt": "^0.3.0",
 		"@poidet/prettier": "^0.3.0",
+		"changelogen": "^0.5.5",
 		"eslint": "^8.50.0",
 		"nuxt": "^3.7.4",
 		"prettier": "^3.0.3",
